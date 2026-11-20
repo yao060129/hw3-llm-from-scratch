@@ -1,0 +1,24 @@
+{
+  "accuracy": 0.8575,
+  "precision": 0.8430141287284144,
+  "recall": 0.8832236842105263,
+  "f1": 0.8626506024096385,
+  "confusion_matrix": [
+    [
+      492,
+      100
+    ],
+    [
+      71,
+      537
+    ]
+  ],
+  "invalid_outputs": 0,
+  "num_samples": 1200,
+  "method": "full",
+  "trainable_params": 5022720,
+  "total_params": 5022720,
+  "trainable_ratio": 1.0,
+  "epochs": 1,
+  "train_samples": 9600
+}

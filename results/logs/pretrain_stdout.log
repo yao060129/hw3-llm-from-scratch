@@ -1,0 +1,176 @@
+参数量: 5.023M (非嵌入 2.670M)
+配置: GPTConfig(vocab_size=12000, block_size=256, n_layer=6, n_head=6, n_embd=192, dropout=0.1, bias=True, tie_weights=True, pos_emb='learned')
+训练 token: 3,606,700  验证 token: 73,228
+开始训练：2200 步，batch=16，block=256
+step     1/2200 | loss 9.4293 | lr 4.00e-06 |   4035 tok/s |   0.0 min
+step    20/2200 | loss 9.1460 | lr 8.00e-05 |   4084 tok/s |   0.3 min
+step    40/2200 | loss 8.7674 | lr 1.60e-04 |   4052 tok/s |   0.7 min
+step    60/2200 | loss 8.3227 | lr 2.40e-04 |   4055 tok/s |   1.0 min
+step    80/2200 | loss 7.8083 | lr 3.20e-04 |   4039 tok/s |   1.4 min
+step   100/2200 | loss 7.3194 | lr 4.00e-04 |   4046 tok/s |   1.7 min
+step   120/2200 | loss 6.9557 | lr 4.80e-04 |   4052 tok/s |   2.0 min
+step   140/2200 | loss 6.7314 | lr 5.60e-04 |   4020 tok/s |   2.4 min
+step   160/2200 | loss 6.5739 | lr 6.00e-04 |   4005 tok/s |   2.7 min
+step   180/2200 | loss 6.4725 | lr 6.00e-04 |   3985 tok/s |   3.1 min
+step   200/2200 | loss 6.3718 | lr 5.99e-04 |   3972 tok/s |   3.4 min
+  [eval] step 200 val_loss 6.3233 ppl 557.41
+step   220/2200 | loss 6.3025 | lr 5.98e-04 |   3751 tok/s |   4.0 min
+step   240/2200 | loss 6.2532 | lr 5.97e-04 |   3749 tok/s |   4.4 min
+step   260/2200 | loss 6.2147 | lr 5.96e-04 |   3724 tok/s |   4.8 min
+step   280/2200 | loss 6.1381 | lr 5.95e-04 |   3706 tok/s |   5.2 min
+step   300/2200 | loss 6.0754 | lr 5.93e-04 |   3698 tok/s |   5.5 min
+step   320/2200 | loss 6.0372 | lr 5.91e-04 |   3702 tok/s |   5.9 min
+step   340/2200 | loss 5.9723 | lr 5.89e-04 |   3710 tok/s |   6.3 min
+step   360/2200 | loss 5.9602 | lr 5.86e-04 |   3715 tok/s |   6.6 min
+step   380/2200 | loss 5.9132 | lr 5.84e-04 |   3725 tok/s |   7.0 min
+step   400/2200 | loss 5.8882 | lr 5.81e-04 |   3728 tok/s |   7.3 min
+  [eval] step 400 val_loss 5.8593 ppl 350.49
+step   420/2200 | loss 5.8608 | lr 5.77e-04 |   3629 tok/s |   7.9 min
+step   440/2200 | loss 5.8232 | lr 5.74e-04 |   3630 tok/s |   8.3 min
+step   460/2200 | loss 5.8184 | lr 5.70e-04 |   3638 tok/s |   8.6 min
+step   480/2200 | loss 5.7921 | lr 5.66e-04 |   3653 tok/s |   9.0 min
+step   500/2200 | loss 5.7541 | lr 5.62e-04 |   3668 tok/s |   9.3 min
+step   520/2200 | loss 5.7163 | lr 5.58e-04 |   3681 tok/s |   9.6 min
+step   540/2200 | loss 5.6979 | lr 5.53e-04 |   3693 tok/s |  10.0 min
+step   560/2200 | loss 5.6900 | lr 5.49e-04 |   3705 tok/s |  10.3 min
+step   580/2200 | loss 5.6494 | lr 5.44e-04 |   3717 tok/s |  10.7 min
+step   600/2200 | loss 5.6185 | lr 5.39e-04 |   3729 tok/s |  11.0 min
+  [eval] step 600 val_loss 5.5599 ppl 259.78
+step   620/2200 | loss 5.5943 | lr 5.33e-04 |   3668 tok/s |  11.5 min
+step   640/2200 | loss 5.5555 | lr 5.28e-04 |   3680 tok/s |  11.9 min
+step   660/2200 | loss 5.5314 | lr 5.22e-04 |   3689 tok/s |  12.2 min
+step   680/2200 | loss 5.5226 | lr 5.16e-04 |   3692 tok/s |  12.6 min
+step   700/2200 | loss 5.4895 | lr 5.10e-04 |   3695 tok/s |  12.9 min
+step   720/2200 | loss 5.4576 | lr 5.04e-04 |   3697 tok/s |  13.3 min
+step   740/2200 | loss 5.4362 | lr 4.97e-04 |   3700 tok/s |  13.7 min
+step   760/2200 | loss 5.4102 | lr 4.91e-04 |   3701 tok/s |  14.0 min
+step   780/2200 | loss 5.3807 | lr 4.84e-04 |   3702 tok/s |  14.4 min
+step   800/2200 | loss 5.3629 | lr 4.77e-04 |   3704 tok/s |  14.7 min
+  [eval] step 800 val_loss 5.3168 ppl 203.74
+step   820/2200 | loss 5.3404 | lr 4.70e-04 |   3649 tok/s |  15.3 min
+step   840/2200 | loss 5.3226 | lr 4.63e-04 |   3652 tok/s |  15.7 min
+step   860/2200 | loss 5.3146 | lr 4.56e-04 |   3638 tok/s |  16.1 min
+step   880/2200 | loss 5.2865 | lr 4.48e-04 |   3635 tok/s |  16.5 min
+step   900/2200 | loss 5.2747 | lr 4.41e-04 |   3635 tok/s |  16.9 min
+step   920/2200 | loss 5.2351 | lr 4.33e-04 |   3633 tok/s |  17.3 min
+step   940/2200 | loss 5.2149 | lr 4.26e-04 |   3633 tok/s |  17.7 min
+step   960/2200 | loss 5.2064 | lr 4.18e-04 |   3633 tok/s |  18.0 min
+step   980/2200 | loss 5.1897 | lr 4.10e-04 |   3627 tok/s |  18.4 min
+step  1000/2200 | loss 5.1696 | lr 4.02e-04 |   3611 tok/s |  18.9 min
+  [eval] step 1000 val_loss 5.1449 ppl 171.55
+step  1020/2200 | loss 5.1562 | lr 3.94e-04 |   3565 tok/s |  19.5 min
+step  1040/2200 | loss 5.1483 | lr 3.86e-04 |   3571 tok/s |  19.9 min
+step  1060/2200 | loss 5.1207 | lr 3.78e-04 |   3577 tok/s |  20.2 min
+step  1080/2200 | loss 5.0959 | lr 3.70e-04 |   3583 tok/s |  20.6 min
+step  1100/2200 | loss 5.0954 | lr 3.61e-04 |   3589 tok/s |  20.9 min
+step  1120/2200 | loss 5.0655 | lr 3.53e-04 |   3588 tok/s |  21.3 min
+step  1140/2200 | loss 5.0561 | lr 3.45e-04 |   3593 tok/s |  21.7 min
+step  1160/2200 | loss 5.0416 | lr 3.37e-04 |   3598 tok/s |  22.0 min
+step  1180/2200 | loss 5.0311 | lr 3.28e-04 |   3603 tok/s |  22.4 min
+step  1200/2200 | loss 5.0162 | lr 3.20e-04 |   3601 tok/s |  22.7 min
+  [eval] step 1200 val_loss 4.9553 ppl 141.93
+step  1220/2200 | loss 4.9983 | lr 3.12e-04 |   3539 tok/s |  23.5 min
+step  1240/2200 | loss 4.9906 | lr 3.04e-04 |   3540 tok/s |  23.9 min
+step  1260/2200 | loss 4.9704 | lr 2.95e-04 |   3541 tok/s |  24.3 min
+step  1280/2200 | loss 4.9549 | lr 2.87e-04 |   3543 tok/s |  24.7 min
+step  1300/2200 | loss 4.9429 | lr 2.79e-04 |   3544 tok/s |  25.0 min
+step  1320/2200 | loss 4.9231 | lr 2.71e-04 |   3546 tok/s |  25.4 min
+step  1340/2200 | loss 4.9117 | lr 2.63e-04 |   3548 tok/s |  25.8 min
+step  1360/2200 | loss 4.9113 | lr 2.55e-04 |   3550 tok/s |  26.2 min
+step  1380/2200 | loss 4.8954 | lr 2.47e-04 |   3551 tok/s |  26.5 min
+step  1400/2200 | loss 4.8821 | lr 2.39e-04 |   3553 tok/s |  26.9 min
+  [eval] step 1400 val_loss 4.8567 ppl 128.60
+step  1420/2200 | loss 4.8941 | lr 2.31e-04 |   3520 tok/s |  27.5 min
+step  1440/2200 | loss 4.8700 | lr 2.24e-04 |   3513 tok/s |  28.0 min
+step  1460/2200 | loss 4.8637 | lr 2.16e-04 |   3504 tok/s |  28.4 min
+step  1480/2200 | loss 4.8647 | lr 2.09e-04 |   3489 tok/s |  29.0 min
+step  1500/2200 | loss 4.8436 | lr 2.01e-04 |   3472 tok/s |  29.5 min
+step  1520/2200 | loss 4.8162 | lr 1.94e-04 |   3473 tok/s |  29.9 min
+step  1540/2200 | loss 4.8093 | lr 1.87e-04 |   3478 tok/s |  30.2 min
+step  1560/2200 | loss 4.8222 | lr 1.80e-04 |   3485 tok/s |  30.6 min
+step  1580/2200 | loss 4.8143 | lr 1.73e-04 |   3492 tok/s |  30.9 min
+step  1600/2200 | loss 4.8107 | lr 1.67e-04 |   3497 tok/s |  31.2 min
+  [eval] step 1600 val_loss 4.7521 ppl 115.83
+step  1620/2200 | loss 4.8036 | lr 1.60e-04 |   3479 tok/s |  31.8 min
+step  1640/2200 | loss 4.7815 | lr 1.54e-04 |   3486 tok/s |  32.1 min
+step  1660/2200 | loss 4.7822 | lr 1.48e-04 |   3492 tok/s |  32.5 min
+step  1680/2200 | loss 4.7618 | lr 1.42e-04 |   3498 tok/s |  32.8 min
+step  1700/2200 | loss 4.7702 | lr 1.36e-04 |   3498 tok/s |  33.2 min
+step  1720/2200 | loss 4.7940 | lr 1.30e-04 |   3502 tok/s |  33.5 min
+step  1740/2200 | loss 4.7490 | lr 1.25e-04 |   3505 tok/s |  33.9 min
+step  1760/2200 | loss 4.7468 | lr 1.19e-04 |   3508 tok/s |  34.3 min
+step  1780/2200 | loss 4.7461 | lr 1.14e-04 |   3511 tok/s |  34.6 min
+step  1800/2200 | loss 4.7493 | lr 1.09e-04 |   3513 tok/s |  35.0 min
+  [eval] step 1800 val_loss 4.6729 ppl 107.01
+step  1820/2200 | loss 4.7382 | lr 1.05e-04 |   3494 tok/s |  35.6 min
+step  1840/2200 | loss 4.7357 | lr 1.00e-04 |   3496 tok/s |  35.9 min
+step  1860/2200 | loss 4.7158 | lr 9.60e-05 |   3498 tok/s |  36.3 min
+step  1880/2200 | loss 4.7281 | lr 9.20e-05 |   3501 tok/s |  36.7 min
+step  1900/2200 | loss 4.6979 | lr 8.82e-05 |   3505 tok/s |  37.0 min
+step  1920/2200 | loss 4.6695 | lr 8.46e-05 |   3509 tok/s |  37.4 min
+step  1940/2200 | loss 4.6900 | lr 8.13e-05 |   3511 tok/s |  37.7 min
+step  1960/2200 | loss 4.7028 | lr 7.82e-05 |   3514 tok/s |  38.1 min
+step  1980/2200 | loss 4.6952 | lr 7.53e-05 |   3515 tok/s |  38.5 min
+step  2000/2200 | loss 4.6768 | lr 7.27e-05 |   3518 tok/s |  38.8 min
+  [eval] step 2000 val_loss 4.6574 ppl 105.36
+step  2020/2200 | loss 4.6890 | lr 7.03e-05 |   3502 tok/s |  39.4 min
+step  2040/2200 | loss 4.6913 | lr 6.82e-05 |   3507 tok/s |  39.7 min
+step  2060/2200 | loss 4.6886 | lr 6.63e-05 |   3512 tok/s |  40.0 min
+step  2080/2200 | loss 4.6701 | lr 6.46e-05 |   3517 tok/s |  40.4 min
+step  2100/2200 | loss 4.6676 | lr 6.32e-05 |   3522 tok/s |  40.7 min
+step  2120/2200 | loss 4.6653 | lr 6.21e-05 |   3526 tok/s |  41.0 min
+step  2140/2200 | loss 4.6736 | lr 6.12e-05 |   3530 tok/s |  41.4 min
+step  2160/2200 | loss 4.6834 | lr 6.05e-05 |   3535 tok/s |  41.7 min
+step  2180/2200 | loss 4.6623 | lr 6.01e-05 |   3539 tok/s |  42.0 min
+step  2200/2200 | loss 4.6780 | lr 6.00e-05 |   3544 tok/s |  42.4 min
+  [eval] step 2200 val_loss 4.6204 ppl 101.54
+{
+  "run_name": "pretrain",
+  "config": {
+    "vocab_size": 12000,
+    "block_size": 256,
+    "n_layer": 6,
+    "n_head": 6,
+    "n_embd": 192,
+    "dropout": 0.1,
+    "bias": true,
+    "tie_weights": true,
+    "pos_emb": "learned"
+  },
+  "args": {
+    "data_dir": "D:\\UserFiles\\Desktop\\具身智能基础2026\\作业三\\data",
+    "out_dir": "D:\\UserFiles\\Desktop\\具身智能基础2026\\作业三\\results",
+    "run_name": "pretrain",
+    "max_steps": 2200,
+    "batch_size": 16,
+    "block_size": 256,
+    "lr": 0.0006,
+    "warmup_steps": 150,
+    "min_lr_ratio": 0.1,
+    "weight_decay": 0.1,
+    "grad_clip": 1.0,
+    "eval_interval": 200,
+    "eval_iters": 40,
+    "log_interval": 20,
+    "seed": 42,
+    "threads": 8,
+    "n_layer": 6,
+    "n_head": 6,
+    "n_embd": 192,
+    "dropout": 0.1,
+    "pos_emb": "learned",
+    "no_tie": false,
+    "resume": null,
+    "smoke": false
+  },
+  "params_m": 5.02272,
+  "params_non_embedding_m": 2.669568,
+  "train_tokens_available": 3606700,
+  "val_tokens_available": 73228,
+  "tokens_seen": 9011200,
+  "epochs_equivalent": 2.498461197216292,
+  "best_val_loss": 4.620409893989563,
+  "best_ppl": 101.53564245061968,
+  "elapsed_sec": 2557.08585357666,
+  "avg_tokens_per_sec": 3524.01151779703
+}

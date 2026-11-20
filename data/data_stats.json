@@ -1,0 +1,21 @@
+{
+  "num_stories_train": 29400,
+  "num_stories_val": 600,
+  "train_chars": 7386255,
+  "val_chars": 150137,
+  "train_tokens": 3606700,
+  "val_tokens": 73228,
+  "tokens_per_char": 0.4882988740572861,
+  "chars_per_token": 2.0479260820140293,
+  "vocab_size": 12000,
+  "eos_id": 0,
+  "special_tokens": {
+    "<|endoftext|>": 0,
+    "<|pad|>": 1,
+    "<|user|>": 2,
+    "<|assistant|>": 3
+  },
+  "token_len_p50": 112,
+  "token_len_p90": 160,
+  "token_len_max": 607
+}

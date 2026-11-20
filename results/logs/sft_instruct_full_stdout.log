@@ -1,0 +1,43 @@
+方法: full | 可训练参数 5,022,720 / 总参数 5,022,720 (100.00%)
+模型配置: GPTConfig(vocab_size=12000, block_size=256, n_layer=6, n_head=6, n_embd=192, dropout=0.1, bias=True, tie_weights=True, pos_emb='learned')
+训练样本 6000 | 验证样本 300 | 测试样本 20
+epoch 1/1 step 10/375 loss 7.2318 lr 1.11e-04 0.1min
+epoch 1/1 step 20/375 loss 7.0579 lr 2.00e-04 0.1min
+epoch 1/1 step 30/375 loss 6.8680 lr 2.00e-04 0.2min
+epoch 1/1 step 40/375 loss 6.6374 lr 1.98e-04 0.3min
+epoch 1/1 step 50/375 loss 6.4101 lr 1.97e-04 0.4min
+epoch 1/1 step 60/375 loss 6.2571 lr 1.94e-04 0.5min
+epoch 1/1 step 70/375 loss 6.0933 lr 1.91e-04 0.5min
+epoch 1/1 step 80/375 loss 5.9452 lr 1.87e-04 0.6min
+epoch 1/1 step 90/375 loss 5.8768 lr 1.83e-04 0.7min
+epoch 1/1 step 100/375 loss 5.7345 lr 1.78e-04 0.8min
+epoch 1/1 step 110/375 loss 5.6783 lr 1.73e-04 0.8min
+epoch 1/1 step 120/375 loss 5.6161 lr 1.67e-04 0.9min
+epoch 1/1 step 130/375 loss 5.5979 lr 1.60e-04 1.0min
+epoch 1/1 step 140/375 loss 5.5271 lr 1.54e-04 1.1min
+epoch 1/1 step 150/375 loss 5.4638 lr 1.47e-04 1.1min
+epoch 1/1 step 160/375 loss 5.4873 lr 1.39e-04 1.2min
+epoch 1/1 step 170/375 loss 5.4617 lr 1.32e-04 1.3min
+epoch 1/1 step 180/375 loss 5.4148 lr 1.24e-04 1.3min
+epoch 1/1 step 190/375 loss 5.4205 lr 1.16e-04 1.4min
+epoch 1/1 step 200/375 loss 5.3993 lr 1.08e-04 1.5min
+  [eval] val_loss 5.4170
+epoch 1/1 step 210/375 loss 5.3640 lr 1.00e-04 1.6min
+epoch 1/1 step 220/375 loss 5.3783 lr 9.23e-05 1.7min
+epoch 1/1 step 230/375 loss 5.3309 lr 8.46e-05 1.7min
+epoch 1/1 step 240/375 loss 5.3110 lr 7.71e-05 1.8min
+epoch 1/1 step 250/375 loss 5.3170 lr 6.99e-05 1.9min
+epoch 1/1 step 260/375 loss 5.2641 lr 6.30e-05 2.0min
+epoch 1/1 step 270/375 loss 5.2852 lr 5.64e-05 2.0min
+epoch 1/1 step 280/375 loss 5.2932 lr 5.03e-05 2.1min
+epoch 1/1 step 290/375 loss 5.2772 lr 4.46e-05 2.2min
+epoch 1/1 step 300/375 loss 5.2423 lr 3.94e-05 2.3min
+epoch 1/1 step 310/375 loss 5.2262 lr 3.48e-05 2.3min
+epoch 1/1 step 320/375 loss 5.2935 lr 3.07e-05 2.4min
+epoch 1/1 step 330/375 loss 5.3179 lr 2.73e-05 2.5min
+epoch 1/1 step 340/375 loss 5.3076 lr 2.45e-05 2.6min
+epoch 1/1 step 350/375 loss 5.3134 lr 2.23e-05 2.6min
+epoch 1/1 step 360/375 loss 5.2931 lr 2.09e-05 2.7min
+epoch 1/1 step 370/375 loss 5.2733 lr 2.01e-05 2.8min
+[epoch 1] val_loss 5.2617
+已生成 20 条指令微调样例

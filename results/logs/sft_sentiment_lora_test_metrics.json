@@ -1,0 +1,24 @@
+{
+  "accuracy": 0.7208333333333333,
+  "precision": 0.6738853503184713,
+  "recall": 0.8700657894736842,
+  "f1": 0.7595118449389806,
+  "confusion_matrix": [
+    [
+      336,
+      256
+    ],
+    [
+      79,
+      529
+    ]
+  ],
+  "invalid_outputs": 0,
+  "num_samples": 1200,
+  "method": "lora",
+  "trainable_params": 147456,
+  "total_params": 5170176,
+  "trainable_ratio": 0.0285204991087344,
+  "epochs": 1,
+  "train_samples": 9600
+}

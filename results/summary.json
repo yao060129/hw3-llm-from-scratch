@@ -1,0 +1,244 @@
+{
+  "data": {
+    "num_stories_train": 29400,
+    "num_stories_val": 600,
+    "train_chars": 7386255,
+    "val_chars": 150137,
+    "train_tokens": 3606700,
+    "val_tokens": 73228,
+    "tokens_per_char": 0.4882988740572861,
+    "chars_per_token": 2.0479260820140293,
+    "vocab_size": 12000,
+    "eos_id": 0,
+    "special_tokens": {
+      "<|endoftext|>": 0,
+      "<|pad|>": 1,
+      "<|user|>": 2,
+      "<|assistant|>": 3
+    },
+    "token_len_p50": 112,
+    "token_len_p90": 160,
+    "token_len_max": 607
+  },
+  "pretrain": {
+    "run_name": "pretrain",
+    "config": {
+      "vocab_size": 12000,
+      "block_size": 256,
+      "n_layer": 6,
+      "n_head": 6,
+      "n_embd": 192,
+      "dropout": 0.1,
+      "bias": true,
+      "tie_weights": true,
+      "pos_emb": "learned"
+    },
+    "args": {
+      "data_dir": "D:\\UserFiles\\Desktop\\具身智能基础2026\\作业三\\data",
+      "out_dir": "D:\\UserFiles\\Desktop\\具身智能基础2026\\作业三\\results",
+      "run_name": "pretrain",
+      "max_steps": 2200,
+      "batch_size": 16,
+      "block_size": 256,
+      "lr": 0.0006,
+      "warmup_steps": 150,
+      "min_lr_ratio": 0.1,
+      "weight_decay": 0.1,
+      "grad_clip": 1.0,
+      "eval_interval": 200,
+      "eval_iters": 40,
+      "log_interval": 20,
+      "seed": 42,
+      "threads": 8,
+      "n_layer": 6,
+      "n_head": 6,
+      "n_embd": 192,
+      "dropout": 0.1,
+      "pos_emb": "learned",
+      "no_tie": false,
+      "resume": null,
+      "smoke": false
+    },
+    "params_m": 5.02272,
+    "params_non_embedding_m": 2.669568,
+    "train_tokens_available": 3606700,
+    "val_tokens_available": 73228,
+    "tokens_seen": 9011200,
+    "epochs_equivalent": 2.498461197216292,
+    "best_val_loss": 4.620409893989563,
+    "best_ppl": 101.53564245061968,
+    "elapsed_sec": 2557.08585357666,
+    "avg_tokens_per_sec": 3524.01151779703
+  },
+  "checkpoints": [
+    {
+      "step": 200,
+      "val_loss": 6.323297917842865
+    },
+    {
+      "step": 400,
+      "val_loss": 5.859322619438172
+    },
+    {
+      "step": 600,
+      "val_loss": 5.559851348400116
+    },
+    {
+      "step": 800,
+      "val_loss": 5.316837561130524
+    },
+    {
+      "step": 1000,
+      "val_loss": 5.144869863986969
+    },
+    {
+      "step": 1200,
+      "val_loss": 4.955324792861939
+    },
+    {
+      "step": 1400,
+      "val_loss": 4.8567040920257565
+    },
+    {
+      "step": 1600,
+      "val_loss": 4.752085411548615
+    },
+    {
+      "step": 1800,
+      "val_loss": 4.672895586490631
+    },
+    {
+      "step": 2000,
+      "val_loss": 4.657389354705811
+    },
+    {
+      "step": 2200,
+      "val_loss": 4.620409893989563
+    }
+  ],
+  "sft_sentiment_full": {
+    "accuracy": 0.8575,
+    "precision": 0.8430141287284144,
+    "recall": 0.8832236842105263,
+    "f1": 0.8626506024096385,
+    "confusion_matrix": [
+      [
+        492,
+        100
+      ],
+      [
+        71,
+        537
+      ]
+    ],
+    "invalid_outputs": 0,
+    "num_samples": 1200,
+    "method": "full",
+    "trainable_params": 5022720,
+    "total_params": 5022720,
+    "trainable_ratio": 1.0,
+    "epochs": 1,
+    "train_samples": 9600
+  },
+  "sft_sentiment_lora": {
+    "accuracy": 0.7208333333333333,
+    "precision": 0.6738853503184713,
+    "recall": 0.8700657894736842,
+    "f1": 0.7595118449389806,
+    "confusion_matrix": [
+      [
+        336,
+        256
+      ],
+      [
+        79,
+        529
+      ]
+    ],
+    "invalid_outputs": 0,
+    "num_samples": 1200,
+    "method": "lora",
+    "trainable_params": 147456,
+    "total_params": 5170176,
+    "trainable_ratio": 0.0285204991087344,
+    "epochs": 1,
+    "train_samples": 9600
+  },
+  "ablations": [
+    {
+      "name": "ablate_learned",
+      "label": "可学习位置编码（基线）",
+      "best_val_loss": 6.460684323310852,
+      "best_ppl": 639.4985306173934,
+      "params_m": 4.998144,
+      "elapsed_sec": 85.18596935272217,
+      "tokens_per_sec": 3606.227672634722,
+      "steps": 300,
+      "batch_size": 8,
+      "block_size": 128,
+      "pos_emb": "learned",
+      "tie_weights": true,
+      "n_layer": 6
+    },
+    {
+      "name": "ablate_none",
+      "label": "无位置编码",
+      "best_val_loss": 6.469107675552368,
+      "best_ppl": 644.9080029594462,
+      "params_m": 4.973568,
+      "elapsed_sec": 87.83746433258057,
+      "tokens_per_sec": 3497.368717713015,
+      "steps": 300,
+      "batch_size": 8,
+      "block_size": 128,
+      "pos_emb": "none",
+      "tie_weights": true,
+      "n_layer": 6
+    },
+    {
+      "name": "ablate_sinusoidal",
+      "label": "正弦位置编码",
+      "best_val_loss": 7.1941431045532225,
+      "best_ppl": 1331.608787060785,
+      "params_m": 4.973568,
+      "elapsed_sec": 97.76739621162415,
+      "tokens_per_sec": 3142.151800126136,
+      "steps": 300,
+      "batch_size": 8,
+      "block_size": 128,
+      "pos_emb": "sinusoidal",
+      "tie_weights": true,
+      "n_layer": 6
+    },
+    {
+      "name": "ablate_untied",
+      "label": "不共享词嵌入/输出头",
+      "best_val_loss": 6.440171885490417,
+      "best_ppl": 626.5144793054815,
+      "params_m": 7.302144,
+      "elapsed_sec": 87.41619682312012,
+      "tokens_per_sec": 3514.222891915503,
+      "steps": 300,
+      "batch_size": 8,
+      "block_size": 128,
+      "pos_emb": "learned",
+      "tie_weights": false,
+      "n_layer": 6
+    },
+    {
+      "name": "ablate_2layer",
+      "label": "2 层 Transformer",
+      "best_val_loss": 6.452333164215088,
+      "best_ppl": 634.1802146073283,
+      "params_m": 3.218688,
+      "elapsed_sec": 47.53446412086487,
+      "tokens_per_sec": 6462.679356579873,
+      "steps": 300,
+      "batch_size": 8,
+      "block_size": 128,
+      "pos_emb": "learned",
+      "tie_weights": true,
+      "n_layer": 2
+    }
+  ]
+}

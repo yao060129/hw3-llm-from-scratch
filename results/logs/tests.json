@@ -1,0 +1,11 @@
+{
+  "causality": true,
+  "kv_cache": true,
+  "tokenizer_roundtrip_200": true,
+  "overfit": {
+    "initial_loss": 9.406517028808594,
+    "final_loss": 4.105194091796875,
+    "min_loss": 4.105194091796875,
+    "steps": 60
+  }
+}

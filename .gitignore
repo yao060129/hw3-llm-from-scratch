@@ -1,0 +1,15 @@
+# 大数据（可用 prepare_data.py 重新生成）
+data/*.tar.gz
+data/*.bin
+data/*.parquet
+data/alpaca_gpt4_data_zh.json
+data/tinystories_zh.jsonl
+data/sft_*.jsonl
+
+# 训练权重（体积大，可重新训练生成）
+results/checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
